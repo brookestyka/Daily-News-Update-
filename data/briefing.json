@@ -1,20 +1,44 @@
 {
-  "generated_at": "2026-11-24T10:00:00-05:00",
-  "date_label": "Sample briefing",
-  "ai_summaries": true,
-  "sample": true,
+  "generated_at": "2026-11-24T19:29:46-05:00",
+  "date_label": "Tuesday, November 24",
+  "ai_summaries": false,
+  "sample": false,
   "categories": [
     {
       "key": "us-politics",
       "label": "US Politics",
       "stories": [
         {
-          "headline": "Your top US politics story goes here",
-          "summary": "Each story gets a two-sentence summary written in plain language. This is placeholder text so you can preview the layout.",
-          "why_it_matters": "A short line on the stakes, so you know whether this one deserves a full read.",
+          "headline": "Moving to Florida may become a choice of some Republicans after midterms",
+          "summary": "",
+          "why_it_matters": "",
           "links": [
-            { "source": "Example", "url": "https://example.com" },
-            { "source": "Another outlet", "url": "https://example.org" }
+            {
+              "source": "NPR",
+              "url": "https://www.npr.org/2026/11/24/nx-s1-6050930/moving-to-florida-may-become-a-choice-of-some-republicans-after-midterms"
+            }
+          ]
+        },
+        {
+          "headline": "Thomas Markle indicted by federal grand jury in US for possessing child sex abuse images",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "BBC",
+              "url": "https://www.bbc.co.uk/news/articles/crwy4egxn592o?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "headline": "Trump reportedly says he is open to pardoning Jensen Huang ahead of CEO’s planned Senate committee testimony – live",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates"
+            }
           ]
         }
       ]
@@ -24,10 +48,37 @@
       "label": "Economy",
       "stories": [
         {
-          "headline": "Your top economy story goes here",
-          "summary": "Expect two to three stories in every section, each linking to the outlets that covered it. This card is only a placeholder.",
-          "why_it_matters": "For the economy and tech, this line ties the news back to everyday life.",
-          "links": [ { "source": "Example", "url": "https://example.com" } ]
+          "headline": "Unpacking President Trump's financial stake in Nvidia",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "NPR",
+              "url": "https://www.npr.org/2026/11/24/nx-s1-6052402/unpacking-president-trumps-financial-stake-in-nvidia"
+            }
+          ]
+        },
+        {
+          "headline": "Households braced for soaring energy bills with new price cap to be announced",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "BBC",
+              "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "headline": "Fact-checking the '£750m a week' cost to rejoin the EU – video",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/politics/video/2026/nov/24/fact-checking-750m-a-week-cost-to-rejoin-eu-video"
+            }
+          ]
         }
       ]
     },
@@ -36,10 +87,37 @@
       "label": "Tech",
       "stories": [
         {
-          "headline": "Your top tech story goes here",
-          "summary": "Real stories replace these after the first run of the daily job. The summaries are written by AI, so the links are there for the full picture.",
-          "why_it_matters": "Why this one matters to you, in a single sentence.",
-          "links": [ { "source": "Example", "url": "https://example.com" } ]
+          "headline": "How high technology is changing cargo crime",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "NPR",
+              "url": "https://www.npr.org/2026/11/24/nx-s1-6051029/how-high-technology-is-changing-cargo-crime"
+            }
+          ]
+        },
+        {
+          "headline": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "BBC",
+              "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "headline": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang"
+            }
+          ]
         }
       ]
     },
@@ -48,10 +126,37 @@
       "label": "Foreign Affairs",
       "stories": [
         {
-          "headline": "Your top foreign affairs story goes here",
-          "summary": "Stories from around the world get the same treatment: a short summary, a why-it-matters line, and tappable links.",
-          "why_it_matters": "Context on how it connects to the bigger picture.",
-          "links": [ { "source": "Example", "url": "https://example.com" } ]
+          "headline": "Who really owns the Albanian land Jared Kushner wants to turn into a 5-star resort?",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "NPR",
+              "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests"
+            }
+          ]
+        },
+        {
+          "headline": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "BBC",
+              "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss"
+            }
+          ]
+        },
+        {
+          "headline": "Australian politics live: Labor exempts pensioners from bill cutting private health rebates for over-65s; Steggall changes party name",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "The Guardian",
+              "url": "https://www.theguardian.com/australia-news/live/2026/nov/25/treasurer-jim-chalmers-myefo-inflation-figures-coalition-one-nation-ntwnfb"
+            }
+          ]
         }
       ]
     }
