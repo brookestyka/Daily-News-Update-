@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-11-24T10:00:00-05:00",
+  "date_label": "Sample briefing",
+  "ai_summaries": true,
+  "sample": true,
+  "categories": [
+    {
+      "key": "us-politics",
+      "label": "US Politics",
+      "stories": [
+        {
+          "headline": "Your top US politics story goes here",
+          "summary": "Each story gets a two-sentence summary written in plain language. This is placeholder text so you can preview the layout.",
+          "why_it_matters": "A short line on the stakes, so you know whether this one deserves a full read.",
+          "links": [
+            { "source": "Example", "url": "https://example.com" },
+            { "source": "Another outlet", "url": "https://example.org" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "economy",
+      "label": "Economy",
+      "stories": [
+        {
+          "headline": "Your top economy story goes here",
+          "summary": "Expect two to three stories in every section, each linking to the outlets that covered it. This card is only a placeholder.",
+          "why_it_matters": "For the economy and tech, this line ties the news back to everyday life.",
+          "links": [ { "source": "Example", "url": "https://example.com" } ]
+        }
+      ]
+    },
+    {
+      "key": "tech",
+      "label": "Tech",
+      "stories": [
+        {
+          "headline": "Your top tech story goes here",
+          "summary": "Real stories replace these after the first run of the daily job. The summaries are written by AI, so the links are there for the full picture.",
+          "why_it_matters": "Why this one matters to you, in a single sentence.",
+          "links": [ { "source": "Example", "url": "https://example.com" } ]
+        }
+      ]
+    },
+    {
+      "key": "foreign-affairs",
+      "label": "Foreign Affairs",
+      "stories": [
+        {
+          "headline": "Your top foreign affairs story goes here",
+          "summary": "Stories from around the world get the same treatment: a short summary, a why-it-matters line, and tappable links.",
+          "why_it_matters": "Context on how it connects to the bigger picture.",
+          "links": [ { "source": "Example", "url": "https://example.com" } ]
+        }
+      ]
+    }
+  ]
+}

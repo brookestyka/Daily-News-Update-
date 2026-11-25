@@ -1,0 +1,84 @@
+name: Daily briefing
+
+on:
+  schedule:
+    # GitHub schedules run in UTC. 10:00 in New York is 14:00 UTC during daylight time
+    # and 15:00 UTC during standard time, so both are scheduled and the "gate" step below
+    # only lets the one that lands on 10am Eastern do the work.
+    - cron: "0 14 * * *"
+    - cron: "0 15 * * *"
+  workflow_dispatch:        # the "Run workflow" button; always builds a fresh briefing
+  push:
+    branches: [main]
+    paths-ignore:
+      - "data/briefing.json"
+      - "README.md"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: briefing
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gate (build only at 10am Eastern, or on manual run)
+        id: gate
+        run: |
+          HOUR=$(TZ=America/New_York date +%H)
+          EVENT="${{ github.event_name }}"
+          if [ "$EVENT" = "workflow_dispatch" ] || { [ "$EVENT" = "schedule" ] && [ "$HOUR" = "10" ]; }; then
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.build == 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Build today's briefing
+        if: steps.gate.outputs.build == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/build_briefing.py
+
+      - name: Save the briefing to the repo
+        if: steps.gate.outputs.build == 'true'
+        run: |
+          git config user.name "briefing-bot"
+          git config user.email "briefing-bot@users.noreply.github.com"
+          git add data/briefing.json
+          git diff --staged --quiet || git commit -m "Briefing for $(TZ=America/New_York date +%F)"
+          git pull --rebase origin main
+          git push
+
+      - name: Assemble the site
+        run: |
+          mkdir _site
+          cp -r index.html manifest.webmanifest sw.js icons data _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Ping my phone
+        if: steps.gate.outputs.build == 'true'
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python scripts/notify.py
