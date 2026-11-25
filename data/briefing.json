@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T19:29:46-05:00",
+  "generated_at": "2026-11-24T19:44:43-05:00",
   "date_label": "Tuesday, November 24",
   "ai_summaries": false,
   "sample": false,
@@ -9,35 +9,35 @@
       "label": "US Politics",
       "stories": [
         {
-          "headline": "Moving to Florida may become a choice of some Republicans after midterms",
+          "headline": "Obama judge's Omar warrant unsealing directly contradicts his own decision in Trump case, DOJ says",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
-              "source": "NPR",
-              "url": "https://www.npr.org/2026/11/24/nx-s1-6050930/moving-to-florida-may-become-a-choice-of-some-republicans-after-midterms"
+              "source": "Fox News",
+              "url": "https://www.foxnews.com/politics/obama-judges-omar-warrant-unsealing-directly-contradicts-his-own-decision-trump-case"
             }
           ]
         },
         {
-          "headline": "Thomas Markle indicted by federal grand jury in US for possessing child sex abuse images",
+          "headline": "2028 Democrats say Nvidia news is another example of corruption in government",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
-              "source": "BBC",
-              "url": "https://www.bbc.co.uk/news/articles/crwy4egxn592o?at_medium=RSS&at_campaign=rss"
+              "source": "Politico",
+              "url": "https://www.politico.com/news/2026/11/23/democrats-2028-nvidia-trump-corruption-message-01181056"
             }
           ]
         },
         {
-          "headline": "Trump reportedly says he is open to pardoning Jensen Huang ahead of CEO’s planned Senate committee testimony – live",
+          "headline": "Abrego Garcia Will Voluntarily Leave U.S., Ending 20-Month Legal Ordeal",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
-              "source": "The Guardian",
-              "url": "https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates"
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/24/us/politics/abrego-garcia-leave-deportation.html"
             }
           ]
         }
@@ -48,35 +48,35 @@
       "label": "Economy",
       "stories": [
         {
-          "headline": "Unpacking President Trump's financial stake in Nvidia",
-          "summary": "",
-          "why_it_matters": "",
-          "links": [
-            {
-              "source": "NPR",
-              "url": "https://www.npr.org/2026/11/24/nx-s1-6052402/unpacking-president-trumps-financial-stake-in-nvidia"
-            }
-          ]
-        },
-        {
-          "headline": "Households braced for soaring energy bills with new price cap to be announced",
+          "headline": "US preparing to unveil new tariffs on global trading partners",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
               "source": "BBC",
-              "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss"
+              "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss"
             }
           ]
         },
         {
-          "headline": "Fact-checking the '£750m a week' cost to rejoin the EU – video",
+          "headline": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
-              "source": "The Guardian",
-              "url": "https://www.theguardian.com/politics/video/2026/nov/24/fact-checking-750m-a-week-cost-to-rejoin-eu-video"
+              "source": "CNBC",
+              "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html"
+            }
+          ]
+        },
+        {
+          "headline": "China’s Huawei Convicted of Fraud in U.S. Criminal Trial",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "The Wall Street Journal",
+              "url": "https://www.wsj.com/business/telecom/chinas-huawei-convicted-of-fraud-in-u-s-criminal-trial-20e17ac3?mod=pls_whats_news_us_business_f"
             }
           ]
         }
@@ -87,35 +87,35 @@
       "label": "Tech",
       "stories": [
         {
-          "headline": "How high technology is changing cargo crime",
-          "summary": "",
-          "why_it_matters": "",
-          "links": [
-            {
-              "source": "NPR",
-              "url": "https://www.npr.org/2026/11/24/nx-s1-6051029/how-high-technology-is-changing-cargo-crime"
-            }
-          ]
-        },
-        {
-          "headline": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+          "headline": "Why tiny cars are taking off across Europe",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
               "source": "BBC",
-              "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss"
+              "url": "https://www.bbc.co.uk/news/articles/cmwy9jne0g7qo?at_medium=RSS&at_campaign=rss"
             }
           ]
         },
         {
-          "headline": "Tech sell-off resumes as euphoria from Jensen Huang’s Nvidia return subsides",
+          "headline": "Blanche Downplays Questions Over Nvidia as Investigators Examine Company’s Customers",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
-              "source": "The Guardian",
-              "url": "https://www.theguardian.com/business/2026/nov/24/nvidia-stock-falls-jensen-huang"
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/24/us/politics/nvidia-justice-department-todd-blanche.html"
+            }
+          ]
+        },
+        {
+          "headline": "Jim Cramer says Tuesday's market pullback is an encouraging sign. Here's why",
+          "summary": "",
+          "why_it_matters": "",
+          "links": [
+            {
+              "source": "CNBC",
+              "url": "https://www.cnbc.com/2026/11/24/jim-cramer-market-pullback.html"
             }
           ]
         }
@@ -126,35 +126,35 @@
       "label": "Foreign Affairs",
       "stories": [
         {
-          "headline": "Who really owns the Albanian land Jared Kushner wants to turn into a 5-star resort?",
+          "headline": "Alaska ends deal to give voter records to US Justice Department",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
-              "source": "NPR",
-              "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests"
+              "source": "Al Jazeera",
+              "url": "https://www.aljazeera.com/news/2026/11/25/alaska-ends-deal-to-give-voter-records-to-us-justice-department?traffic_source=rss"
             }
           ]
         },
         {
-          "headline": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+          "headline": "Trump Administration Pauses Joint Operations With Ecuador",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
-              "source": "BBC",
-              "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss"
+              "source": "The New York Times",
+              "url": "https://www.nytimes.com/2026/11/24/world/americas/ecuador-us-military-operations-trump.html"
             }
           ]
         },
         {
-          "headline": "Australian politics live: Labor exempts pensioners from bill cutting private health rebates for over-65s; Steggall changes party name",
+          "headline": "China’s Huawei Convicted of Fraud in U.S. Criminal Trial",
           "summary": "",
           "why_it_matters": "",
           "links": [
             {
-              "source": "The Guardian",
-              "url": "https://www.theguardian.com/australia-news/live/2026/nov/25/treasurer-jim-chalmers-myefo-inflation-figures-coalition-one-nation-ntwnfb"
+              "source": "The Wall Street Journal",
+              "url": "https://www.wsj.com/business/telecom/chinas-huawei-convicted-of-fraud-in-u-s-criminal-trial-20e17ac3?mod=rss_worldnews"
             }
           ]
         }
