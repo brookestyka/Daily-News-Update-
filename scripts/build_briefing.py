@@ -36,14 +36,15 @@ except Exception:  # e.g. Windows without the tzdata package
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "briefing.json"
 USER_AGENT = "Mozilla/5.0 (compatible; DailyBriefingBot/1.0)"
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 
 STORIES_PER_CATEGORY = 3
 MAX_AGE_HOURS = 36
-PER_FEED = 8
-CANDIDATES_PER_CATEGORY = 24
+PER_FEED = 6
+CANDIDATES_PER_CATEGORY = 32
 
-# Mix of outlets across the spectrum. AP and Reuters don't offer free public feeds.
+# Outlets that let you read articles for free, mixed across the spectrum.
+# (The NYT and WSJ were removed because of their paywalls. AP and Reuters have no free feeds.)
 # If a feed breaks, the script skips it and keeps going; run --check-feeds to see which.
 CATEGORIES = [
     {"key": "us-politics", "label": "US Politics", "prefix": "P", "feeds": [
@@ -52,34 +53,41 @@ CATEGORIES = [
         ("The Guardian", "https://www.theguardian.com/us-news/us-politics/rss"),
         ("Fox News", "https://moxie.foxnews.com/google-publisher/politics.xml"),
         ("Politico", "https://rss.politico.com/politics-news.xml"),
-        ("The New York Times", "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"),
+        ("CBS News", "https://www.cbsnews.com/latest/rss/politics"),
+        ("ABC News", "https://abcnews.go.com/abcnews/politicsheadlines"),
+        ("PBS NewsHour", "https://www.pbs.org/newshour/feeds/rss/politics"),
+        ("The Hill", "https://thehill.com/homenews/feed/"),
     ]},
     {"key": "economy", "label": "Economy", "prefix": "E", "feeds": [
         ("NPR", "https://feeds.npr.org/1006/rss.xml"),
         ("BBC", "https://feeds.bbci.co.uk/news/business/rss.xml"),
         ("The Guardian", "https://www.theguardian.com/business/economics/rss"),
         ("CNBC", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
-        ("The Wall Street Journal", "https://feeds.content.dowjones.io/public/rss/WSJcomUSBusiness"),
-        ("The New York Times", "https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml"),
+        ("CBS News", "https://www.cbsnews.com/latest/rss/moneywatch"),
+        ("ABC News", "https://abcnews.go.com/abcnews/moneyheadlines"),
+        ("PBS NewsHour", "https://www.pbs.org/newshour/feeds/rss/economy"),
     ]},
     {"key": "tech", "label": "Tech", "prefix": "T", "feeds": [
         ("NPR", "https://feeds.npr.org/1019/rss.xml"),
         ("BBC", "https://feeds.bbci.co.uk/news/technology/rss.xml"),
         ("The Guardian", "https://www.theguardian.com/technology/rss"),
-        ("The New York Times", "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"),
         ("CNBC", "https://www.cnbc.com/id/19854910/device/rss/rss.html"),
-        ("The Wall Street Journal", "https://feeds.content.dowjones.io/public/rss/RSSWSJD"),
         ("Fox News", "https://moxie.foxnews.com/google-publisher/tech.xml"),
+        ("CBS News", "https://www.cbsnews.com/latest/rss/technology"),
+        ("ABC News", "https://abcnews.go.com/abcnews/technologyheadlines"),
         ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
+        ("The Verge", "https://www.theverge.com/rss/index.xml"),
+        ("TechCrunch", "https://techcrunch.com/feed/"),
     ]},
     {"key": "foreign-affairs", "label": "Foreign Affairs", "prefix": "F", "feeds": [
         ("NPR", "https://feeds.npr.org/1004/rss.xml"),
         ("BBC", "https://feeds.bbci.co.uk/news/world/rss.xml"),
         ("The Guardian", "https://www.theguardian.com/world/rss"),
         ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
-        ("The New York Times", "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"),
-        ("The Wall Street Journal", "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"),
         ("Fox News", "https://moxie.foxnews.com/google-publisher/world.xml"),
+        ("CBS News", "https://www.cbsnews.com/latest/rss/world"),
+        ("ABC News", "https://abcnews.go.com/abcnews/internationalheadlines"),
+        ("PBS NewsHour", "https://www.pbs.org/newshour/feeds/rss/world"),
     ]},
 ]
 
